@@ -99,9 +99,75 @@
 			}
 		}
 	});
+	
 
 	/*--/ Property owl owl /--*/
 	$('#property-single-carousel').owlCarousel({
+		loop: true,
+		margin: 0,  
+		nav: true,
+		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+	
+	/*--/ Property owl owl /--*/
+	$('#property-single-carousel-2').owlCarousel({
+		loop: true,
+		margin: 0,  
+		nav: true,
+		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+	
+	/*--/ Property owl owl /--*/
+	$('#property-single-carousel-3').owlCarousel({
+		loop: true,
+		margin: 0,  
+		nav: true,
+		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+	
+	/*--/ Property owl owl /--*/
+	$('#property-single-carousel-4').owlCarousel({
+		loop: true,
+		margin: 0,  
+		nav: true,
+		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+	
+	/*--/ Property owl owl /--*/
+	$('#property-single-carousel-5').owlCarousel({
+		loop: true,
+		margin: 0,  
+		nav: true,
+		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
+		responsive: {
+			0: {
+				items: 1,
+			}
+		}
+	});
+	
+	/*--/ Property owl owl /--*/
+	$('#property-single-carousel-6').owlCarousel({
 		loop: true,
 		margin: 0,  
 		nav: true,
