@@ -1638,7 +1638,7 @@ a:hover {
   font-style: italic;
   margin-top: 25px;
   padding: 1.5rem 1.5rem;
-  background-color: #f3f3f3;
+  background-color: #d2c6ae;
   position: relative;
 }
 
@@ -1712,8 +1712,8 @@ footer .credits {
 ======================================*/
 
 .form-a #sendmessage {
-  color: #2eca6a;
-  border: 1px solid #26a356;
+  color: #a39163;
+  border: 1px solid #a39163;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1790,7 +1790,7 @@ footer .credits {
 }
 
 .btn.btn-a:hover {
-  background-color: #2eca6a;
+  background-color: #A39163;
   color: #000000;
 }
 
@@ -1805,13 +1805,13 @@ footer .credits {
 }
 
 .btn.btn-b-n {
-  background-color: #2eca6a;
+  background-color: #A39163;
   color: #ffffff;
   border-radius: 0;
 }
 
 .btn.btn-b-n:hover {
-  background-color: #26a356;
+  background-color: #A39163;
   color: #ffffff;
 }
 
