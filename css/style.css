@@ -10,8 +10,9 @@
 ======================================*/
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: Dosis, sans-serif;  
   color: #555555;
+  font-style: bold;
 }
 
 h1,
@@ -71,17 +72,20 @@ a:hover {
 .link-a {
   color: #ffffff;
   text-decoration: none;
+  font-family: Dosis, sans-serif;
 }
 
 .link-a:hover {
   color: #ffffff;
   text-decoration: none;
+  font-family: Dosis, sans-serif;
 }
 
 .link-a span {
   font-size: 18px;
   vertical-align: middle;
   margin-left: 5px;
+  font-family: Dosis, sans-serif;
 }
 
 .text-brand {
@@ -98,7 +102,7 @@ a:hover {
   color: white;
 }
 .color-b {
-  color: #2eca6a;
+  color: #A39163;
 }
 
 .color-d {
@@ -132,7 +136,7 @@ a:hover {
   bottom: -1px;
   width: 100%;
   height: 2px;
-  background-color: #2eca6a;
+  background-color: #A39163;
   z-index: 2;
 }
 
@@ -273,6 +277,10 @@ a:hover {
   padding: 8rem 0 5rem 0;
 }
 
+.container{
+   max-width:100%;
+}
+
 /*------/ Title /------*/
 
 .title-wrap {
@@ -280,18 +288,24 @@ a:hover {
 }
 
 .title-a {
-  font-size: 2.6rem;
-  font-weight: 600;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color:#A39163;
+  font-family:Roboto Slab;
+  font-style:italic;
 }
 
 .title-link {
   font-size: 1.2rem;
   font-weight: 300;
   padding-top: 1.2rem;
+  font-family:Roboto Slab;
+  font-style:italic;
+  
 }
 
 .title-link a {
-  color: #313131;
+  color:#A39163;
 }
 
 .title-link span {
@@ -383,11 +397,11 @@ a:hover {
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #2eca6a;
+  background-color: #a39163;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #2eca6a;
+  background-color: #a39163;
   width: 35px;
 }
 
@@ -437,7 +451,7 @@ a:hover {
   display: inline-block;
   transition: all 0.6s ease-in-out;
   color: #ffffff;
-  background-color: #2eca6a;
+  background-color: #a39163;
   opacity: .9;
 }
 
@@ -449,7 +463,7 @@ a:hover {
 
 .nav-arrow-b .owl-arrow .owl-nav .owl-prev:hover,
 .nav-arrow-b .owl-arrow .owl-nav .owl-next:hover {
-  background-color: #26a356;
+  background-color: #a39163;
 }
 
 .nav-arrow-b .owl-arrow .owl-nav .owl-next {
@@ -467,7 +481,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #2eca6a;
+  background: #a39163;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -549,25 +563,46 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
+  font-family:Dosis, sans-serif;
+}
+
+.navbar-home-default {
+  transition: all .5s ease-in-out;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
+  font-family:Dosis, sans-serif;
 }
 
 .navbar-default .nav-search {
-  color: #000000;
+  color: #757575;
   font-size: 1.5rem;
 }
 
-.navbar-default.navbar-reduce {
+.navbar-home-default .nav-search {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.navbar-default.navbar-reduce,
+.navbar-home-default.navbar-reduce{
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
 }
 
 .navbar-default.navbar-trans,
-.navbar-default.navbar-reduce {
+.navbar-default.navbar-reduce,
+.navbar-home-default.navbar-trans,
+.navbar-home-default.navbar-reduce{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .navbar-default.navbar-trans .nav-item,
-.navbar-default.navbar-reduce .nav-item {
+.navbar-default.navbar-reduce .nav-item,
+.navbar-home-default.navbar-trans .nav-item,
+.navbar-home-default.navbar-reduce .nav-item{
   position: relative;
   padding-right: 10px;
   padding-bottom: 8px;
@@ -575,9 +610,11 @@ a:hover {
 }
 
 .navbar-default.navbar-trans .nav-link,
-.navbar-default.navbar-reduce .nav-link {
+.navbar-default.navbar-reduce .nav-link,
+.navbar-home-default.navbar-reduce .nav-link
+ {
   font-size: 1.1rem;
-  color: #000000;
+  color: #757575;
   font-weight: 600;
   letter-spacing: 0.030em;
   transition: all 0.1s ease-in-out;
@@ -586,8 +623,23 @@ a:hover {
   padding-right: 0;
 }
 
+.navbar-home-default.navbar-trans .nav-link
+ {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.030em;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 .navbar-default.navbar-trans .nav-link:before,
-.navbar-default.navbar-reduce .nav-link:before {
+.navbar-default.navbar-reduce .nav-link:before,
+.navbar-home-default.navbar-trans .nav-link:before,
+.navbar-home-default.navbar-reduce .nav-link:before {
   content: '';
   position: absolute;
   bottom: 5px;
@@ -606,12 +658,20 @@ a:hover {
 }
 
 .navbar-default.navbar-trans .nav-link:hover,
-.navbar-default.navbar-reduce .nav-link:hover {
-  color: #000000;
+.navbar-default.navbar-reduce .nav-link:hover,
+.navbar-home-default.navbar-reduce .nav-link:hover {
+  color: #757575;
+}
+
+.navbar-home-default.navbar-trans .nav-link:hover {
+  color: #ffffff;
 }
 
 .navbar-default.navbar-trans .nav-link:hover:before,
-.navbar-default.navbar-reduce .nav-link:hover:before {
+.navbar-default.navbar-reduce .nav-link:hover:before,
+.navbar-home-default.navbar-trans .nav-link:hover:before,
+.navbar-home-default.navbar-reduce .nav-link:hover:before
+{
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   -webkit-transform-origin: left;
@@ -625,58 +685,96 @@ a:hover {
 .navbar-default.navbar-reduce .show > .nav-link:before,
 .navbar-default.navbar-reduce .active > .nav-link:before,
 .navbar-default.navbar-reduce .nav-link.show:before,
-.navbar-default.navbar-reduce .nav-link.active:before {
+.navbar-default.navbar-reduce .nav-link.active:before,
+.navbar-home-default.navbar-trans .show > .nav-link:before,
+.navbar-home-default.navbar-trans .active > .nav-link:before,
+.navbar-home-default.navbar-trans .nav-link.show:before,
+.navbar-home-default.navbar-trans .nav-link.active:before,
+.navbar-home-default.navbar-reduce .show > .nav-link:before,
+.navbar-home-default.navbar-reduce .active > .nav-link:before,
+.navbar-home-default.navbar-reduce .nav-link.show:before,
+.navbar-home-default.navbar-reduce .nav-link.active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-.navbar-default.navbar-trans .nav-link:before {
-  background-color: #2eca6a;
+.navbar-default.navbar-trans .nav-link:before,
+.navbar-home-default.navbar-trans .nav-link:before{
+  background-color: #A39163;
 }
 
-.navbar-default.navbar-trans .nav-link:hover {
-  color: #000000;
+.navbar-default.navbar-trans .nav-link:hover{
+  color: #757575;
+}
+
+.navbar-home-default.navbar-trans .nav-link:hover {
+  color: #ffffff;
 }
 
 .navbar-default.navbar-trans .show > .nav-link,
 .navbar-default.navbar-trans .active > .nav-link,
 .navbar-default.navbar-trans .nav-link.show,
-.navbar-default.navbar-trans .nav-link.active {
-  color: #000000;
+.navbar-default.navbar-trans .nav-link.active
+ {
+  color: #757575;
 }
 
-.navbar-default.navbar-reduce {
+.navbar-home-default.navbar-trans .show > .nav-link,
+.navbar-home-default.navbar-trans .active > .nav-link,
+.navbar-home-default.navbar-trans .nav-link.show,
+.navbar-home-default.navbar-trans .nav-link.active
+ {
+  color: #ffffff;
+}
+
+.navbar-default.navbar-reduce,
+.navbar-home-default.navbar-reduce
+ {
   transition: all .5s ease-in-out;
   padding-top: 19px;
   padding-bottom: 19px;
 }
 
-.navbar-default.navbar-reduce .nav-link {
-  color: #000000;
+.navbar-default.navbar-reduce .nav-link,
+.navbar-home-default.navbar-reduce .nav-link
+ {
+  color: #757575;
 }
 
-.navbar-default.navbar-reduce .nav-link:before {
-  background-color: #2eca6a;
+
+.navbar-default.navbar-reduce .nav-link:before,
+.navbar-home-default.navbar-reduce .nav-link:before {
+  background-color: #A39163;
 }
 
-.navbar-default.navbar-reduce .nav-link:hover {
-  color: #000000;
+.navbar-default.navbar-reduce .nav-link:hover,
+.navbar-home-default.navbar-reduce .nav-link:hover
+ {
+  color: #757575;
 }
+
 
 .navbar-default.navbar-reduce .show > .nav-link,
 .navbar-default.navbar-reduce .active > .nav-link,
 .navbar-default.navbar-reduce .nav-link.show,
-.navbar-default.navbar-reduce .nav-link.active {
-  color: #000000;
+.navbar-default.navbar-reduce .nav-link.active,
+.navbar-home-default.navbar-reduce .show > .nav-link,
+.navbar-home-default.navbar-reduce .active > .nav-link,
+.navbar-home-default.navbar-reduce .nav-link.show,
+.navbar-home-default.navbar-reduce .nav-link.active {
+  color: #757575;
 }
 
-.navbar-default.navbar-reduce .navbar-brand {
-  color: #000000;
+.navbar-default.navbar-reduce .navbar-brand,
+.navbar-home-default.navbar-reduce .navbar-brand
+ {
+  color: #757575;
 }
 
-.navbar-default .dropdown .dropdown-menu {
+.navbar-default .dropdown .dropdown-menu ,
+.navbar-home-default .dropdown .dropdown-menu{
   border-top: 0;
-  border-left: 4px solid #2eca6a;
+  border-left: 4px solid #A39163;
   border-right: 0;
   border-bottom: 0;
   -webkit-transform: translate3d(0px, -40px, 0px);
@@ -690,7 +788,8 @@ a:hover {
   padding: 12px 0;
 }
 
-.navbar-default .dropdown .dropdown-menu .dropdown-item {
+.navbar-default .dropdown .dropdown-menu .dropdown-item,
+ .navbar-home-default .dropdown .dropdown-menu .dropdown-item{
   padding: 12px 18px;
   transition: all 500ms ease;
   font-weight: 600;
@@ -699,16 +798,26 @@ a:hover {
 
 .navbar-default .dropdown .dropdown-menu .dropdown-item:hover {
   background-color: #ffffff;
-  color: #2eca6a;
+  color: #A39163;
+  transition: all 500ms ease;
+}
+
+.navbar-home-default .dropdown .dropdown-menu .dropdown-item:hover {
+  color: #A39163;
   transition: all 500ms ease;
 }
 
 .navbar-default .dropdown .dropdown-menu .dropdown-item.active {
   background-color: #ffffff;
-  color: #2eca6a;
+  color: #A39163;
 }
 
-.navbar-default .dropdown:hover .dropdown-menu {
+.navbar-home-default .dropdown .dropdown-menu .dropdown-item.active {
+  color: #A39163;
+}
+
+.navbar-default .dropdown:hover .dropdown-menu,
+ .navbar-home-default .dropdown:hover .dropdown-menu{
   -webkit-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
   visibility: visible;
@@ -729,7 +838,7 @@ a:hover {
 
 .navbar-toggler span {
   display: block;
-  background-color: #000000;
+  background-color: #A39163;
   height: 3px;
   width: 25px;
   margin-top: 4px;
@@ -770,6 +879,7 @@ a:hover {
   transform: rotate(-135deg);
   opacity: 0.9;
 }
+
 
 /*======================================
 //--//-->   BOX COLAPSE
@@ -901,11 +1011,11 @@ a:hover {
 }
 
 .intro .owl-theme .owl-dots .owl-dot:hover span {
-  background-color: #2eca6a;
+  background-color: #a39163;
 }
 
 .intro .owl-theme .owl-dots .owl-dot.active span {
-  background-color: #2eca6a;
+  background-color: #a39163;
 }
 
 .intro .intro-item {
@@ -932,7 +1042,7 @@ a:hover {
 .intro .intro-body .price-a {
   color: #ffffff;
   padding: 1rem 1.5rem;
-  border: 2px solid #2eca6a;
+  border: 2px solid #a39163;
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 0.030em;
@@ -956,9 +1066,10 @@ a:hover {
 .intro .intro-title {
   transition-duration: 9s !important;
   color: #ffffff;
-  font-weight: 700;
-  font-size: 2.8rem;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: Dosis, sans-serif;
+  font-style: italic;
 }
 
 .intro .intro-subtitle {
@@ -1041,7 +1152,7 @@ a:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 27%, rgba(0, 0, 0, 0.65) 90%);
+  
   
 }
 
@@ -1065,6 +1176,7 @@ a:hover {
   color: #ffffff;
   margin-bottom: 0;
   padding-bottom: .7rem;
+  font-family: Dosis, sans-serif;  
 }
 
 .card-header-a .card-title-a a {
@@ -1095,7 +1207,8 @@ a:hover {
   width: 100%;
   position: absolute;
   z-index: 2;
-  background-color: #2eca6a;
+  background-color: #d2c6ae;
+  font-family: Dosis, sans-serif;  
 }
 
 .card-info {
@@ -1105,7 +1218,7 @@ a:hover {
 }
 
 .card-info .card-info-title {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #313131;
 }
 
@@ -1192,9 +1305,9 @@ a:hover {
 
 .card-header-b .category-b {
   font-size: .9rem;
-  background-color: #2eca6a;
+  background-color: #a39163;
   padding: .3rem .7rem;
-  color: #313131;
+  color: #ffffff;
   letter-spacing: 0.030em;
   border-radius: 50px;
   text-decoration: none;
@@ -1512,10 +1625,12 @@ a:hover {
 .choose-text {
   margin-top: 25px;
   padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-  background-color: #f3f3f3;
+  background-color: #A29161;
   position: relative;
   height: 100%;
   max-width:50;
+  color:#ffffff;
+  font-size:1.8rem;
 }
 
 .foundation-text {
@@ -1559,7 +1674,7 @@ a:hover {
 .section-footer {
   padding-top: 60px;
   margin-top: 60px;
-  background: #f3f3f3;
+  background: #d2c6ae;
 }
 
 .section-footer ul {
@@ -1577,7 +1692,7 @@ a:hover {
 }
 
 footer {
-  background: #f3f3f3;
+  background: #d2c6ae;
   text-align: center;
   padding: 30px 0;
 }
@@ -1701,7 +1816,8 @@ footer .credits {
 
 @media (min-width: 576px) {
   .intro .intro-title {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
+	font-family: Dosis, sans-serif;
   }
 
   .intro .intro-subtitle.intro-price {
@@ -1740,12 +1856,16 @@ footer .credits {
   }
 
   .navbar-default.navbar-trans .nav-item,
-  .navbar-default.navbar-reduce .nav-item {
-    margin-left: 15px;
+  .navbar-default.navbar-reduce .nav-item,
+ .navbar-home-default.navbar-trans .nav-item,
+  .navbar-home-default.navbar-reduce .nav-item  {
+    margin-left: 40px;
   }
 
-  .navbar-default .dropdown .dropdown-menu {
-    border-top: 4px solid #2eca6a;
+  .navbar-default .dropdown .dropdown-menu,
+  .navbar-home-default .dropdown .dropdown-menu
+  {
+    border-top: 4px solid #A39163;
     border-left: 0;
     display: block;
     position: absolute;
@@ -1770,7 +1890,8 @@ footer .credits {
   }
 
   .intro .intro-title {
-    font-size: 4rem;
+    font-size: 3rem;
+	font-family: Dosis, sans-serif;
   }
 
   .intro .intro-subtitle {
@@ -1819,11 +1940,11 @@ footer .credits {
   }
 
   .card-header-a .card-title-a {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .card-info .card-info-title {
-    font-size: .9rem;
+    font-size: 1rem;
   }
 
   .card-info li span {
@@ -1913,7 +2034,8 @@ footer .credits {
   }
 
   .intro .intro-title {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
+	font-family: Dosis, sans-serif;
   }
 
   .intro .intro-subtitle.intro-price {
@@ -1934,11 +2056,11 @@ footer .credits {
   }
 
   .card-header-a .card-title-a {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .card-info .card-info-title {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .card-info li span {
