@@ -102,11 +102,11 @@ jQuery(document).ready(function($) {
          //alert(msg);
 		 console.log(msg.result);
         if (msg.result == 'success') {
-          $("#sendmessage").addClass("show");
+          alert("Thanks for contacting DG INFRA, We will get back to you soon.");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
         } else {
-          $("#sendmessage").removeClass("show");
+          alert("Oops something went wrong!!");
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg);
         }
