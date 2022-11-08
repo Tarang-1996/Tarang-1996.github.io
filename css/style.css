@@ -106,7 +106,7 @@ a:hover {
 }
 
 .color-d {
-  color: #adadad;
+  color: #757575;
 }
 
 .color-text-a {
@@ -1190,7 +1190,7 @@ a:hover {
 .card-body-a {
   z-index: 2;
   transition: all .5s ease-in;
-  padding: 0rem 1rem 2rem 1rem;
+  padding: 0rem 1rem 2rem 5rem;
 }
 
 .card-body-a .price-box {
@@ -1508,7 +1508,7 @@ a:hover {
 }
 
 .card-box-d:hover .card-overlay-hover {
-  background-color: #2eca6a;
+  background-color: #e1d9c9;
   opacity: .9;
 }
 
@@ -1638,7 +1638,7 @@ a:hover {
 }
 
 .foundation-text {
-  font-style: italic;
+  font-style: normal;
   margin-top: 25px;
   padding: 1.5rem 1.5rem;
   background-color: #d2c6ae;
@@ -1818,6 +1818,10 @@ footer .credits {
   color: #ffffff;
 }
 
+.btn-bg{
+	background-color:#A39163;
+}
+
 @media (min-width: 576px) {
   .intro .intro-title {
     font-size: 2.8rem;
@@ -1985,7 +1989,7 @@ footer .credits {
   }
 
   .card-box-d .content-d {
-    font-size: .8rem;
+    font-size: 1rem;
     margin: .5rem 0;
   }
 
