@@ -40,9 +40,21 @@
 
 <body>
 
+  <div id="property-single-popup" class="modal" style='display:none'>
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+
   <div class="click-closed"></div>
   <!--/ Nav Star /-->
-  <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+  <nav id="nav" class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top" style='display:block'>
     <div class="container">
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +62,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html"><img alt="DG INFRA" src="img/DG_LOGO.jpg" width="120"
+      <a class="navbar-brand text-brand" href="index.html"><img alt="DG INFRA" src="img/DG_LOGO.png" width="120"
           height="60"></a>
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -77,6 +89,8 @@
     </div>
   </nav>
   <!--/ Nav End /-->
+
+  
 
   <!--/ Intro Single star /-->
   <div id="dg_farms" style='display:none'>
@@ -115,7 +129,7 @@
           <div class="col-sm-12">
             <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
               <div class="carousel-item-b">
-                <img src="img/DG_FARMS_SLIDE_2.png" alt="">
+                <img id="img1"  src="img/DG_FARMS_SLIDE_2.png" alt="DG Farms">
               </div>
               <div class="carousel-item-b">
                 <img src="img/DG_FARMS_SLIDE_4.png" alt="">
@@ -125,7 +139,7 @@
               </div>
               <div class="carousel-item-b">
                 <img src="img/DG_FARMS_SLIDE_1.png" alt="">
-              </div>
+              </div>              
             </div>
             <div class="row justify-content-between">
               <div class="col-md-5 col-lg-4">
@@ -1007,47 +1021,54 @@
   <section class="section-footer">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">DG INFRA GROUP</h3>
+              <a class="navbar-brand text-brand" href="index.html"><img alt="DG INFRA" src="img/DG_LOGO.png" width="120"
+                height="60"></a>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
-                <li class="color-a">
+                <li class="color-b">
                   Address:
                   <span class="color-text-a"> E 7/1 Ekta Nagar, Pilibhit Road, Bareilly</span>
                 </li>
-                <li class="color-a">
+                <li class="color-b">
                   Phone:
                   <span class="color-text-a"> +91 9557733715 | +91 9999265013</span>
                 </li>
-                <li class="color-a">
+                <li class="color-b">
                   Email:
                   <span class="color-text-a"> dginfragroup@gmail.com</span>
                 </li>
               </ul>
-              <div class="socials-a">
-                <ul class="list-inline">
-                  <li class="list-inline-item">
-                    <a href="https://www.facebook.com/profile.php?id=100057460359257">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 section-md-t3">
+          <div class="widget-a">
+            <div class="w-header-a">
+              <h3 class="w-title-a text-brand color-a">Quick Links</h3>
+            </div>
+            <div class="w-body-a">
+              <div class="w-body-a">
+                <ul class="list-unstyled">
+                    <a href="index.html"> Home</a>
                   </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.instagram.com/parkavenuebly/?igshid=YmMyMTA2M2Y%3D">
-                      <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
+                  <li class="item-list-a">
+                    <a href="about.html"> About Us</a>
                   </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.facebook.com/ParkCityBareilly">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
+                  <li class="item-list-a">
+                    <a href="project-grid.html"> Key Projects</a>
                   </li>
-                  <li class="list-inline-item">
-                    <a href="https://www.instagram.com/parkcitybareilly/?igshid=YmMyMTA2M2Y%3D">
-                      <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
+                  <li class="item-list-a">
+                    <a href="dg-foundation.html"> DG Foundation</a>
+                  </li>
+                  <li class="item-list-a">
+                    <a href="media.html"> Media Centre</a>
+                  </li>
+                  <li class="item-list-a">
+                    <a href="contact.html"> Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -1057,35 +1078,29 @@
         <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">The Company</h3>
+              <h3 class="w-title-a text-brand color-a">Follow Us</h3>
             </div>
             <div class="w-body-a">
               <div class="w-body-a">
-                <ul class="list-unstyled">
-                  <li class="item-list-a">
-                    <a href="index.html"><span class="ion-ios-arrow-forward"></span> Home</a>
-                  </li>
-                  <li class="item-list-a">
-                    <a href="about.html"><span class="ion-ios-arrow-forward"></span> About Us</a>
-                  </li>
-                  <li class="item-list-a">
-                    <a href="project-grid.html"><span class="ion-ios-arrow-forward"></span> Key Projects</a>
-                  </li>
-                  <li class="item-list-a">
-                    <a href="dg-foundation.html"><span class="ion-ios-arrow-forward"></span> DG Foundation</a>
-                  </li>
-                  <li class="item-list-a">
-                    <a href="media.html"><span class="ion-ios-arrow-forward"></span> Media Centre</a>
-                  </li>
-                  <li class="item-list-a">
-                    <a href="contact.html"><span class="ion-ios-arrow-forward"></span> Contact Us</a>
-                  </li>
-                </ul>
+                <div class="socials-a">
+                
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="https://www.facebook.com/DGinfragroup05">
+                        <i class="fa fa-facebook fa-2x color-b" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="https://www.instagram.com/parkavenuebly/?igshid=YmMyMTA2M2Y%3D">
+                        <i class="fa fa-instagram fa-2x color-b" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -1145,6 +1160,41 @@
     if (div.style.display == "none") {
       div.style.display = "block";
     }    
+  </script>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("property-single-popup");
+    var nav = document.getElementById("nav");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("img1");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    console.log(modalImg);
+    params = getParams();
+    project = unescape(params["project"]);
+
+    var div = document.getElementById(project);
+   
+       
+    img.onclick = function () {
+      modal.style.display = "block";
+      nav.style.display = "none";
+      div.style.display = "none"; 
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+      nav.style.display = "block";
+      div.style.display = "block"; 
+    }
   </script>
 
 </body>
